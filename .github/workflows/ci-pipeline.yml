@@ -36,6 +36,6 @@ jobs:
         projectBaseDir: ./
         args: >
           -Dsonar.projectKey=${{ secrets.SONARQUBE_PROJECT_KEY }}
-          -Dsonar.organization=${{ env.SONARQUBE_ORG }}
+          -Dsonar.organization=${{ secrets.SONARQUBE_ORG }}
         env:
           SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
