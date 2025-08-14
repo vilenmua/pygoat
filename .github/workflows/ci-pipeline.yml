@@ -26,7 +26,5 @@ jobs:
       run: python3 manage.py migrate
 
     - name: Run Bandit SAST
-      uses: mdegis/bandit-action@v1.0
-      with:
-        GITHUB_TOKEN: ${{ secrets.BANDIT_GITHUB_TOKEN }}
+      uses: PyCQA/bandit-action@v1
 
